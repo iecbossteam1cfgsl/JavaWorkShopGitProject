@@ -32,6 +32,7 @@ public class TestInvoiceLine {
 	public void testInvoiceLineAmount() {
 		// Start of user code for method testInvoiceLineAmount
 		// End of user code
+		//
 	}
 
 	/**
@@ -40,6 +41,9 @@ public class TestInvoiceLine {
 	public void testInvoiceAmount() {
 		// Start of user code for method testInvoiceAmount
 		// End of user code
+		//Vamos a calcular el importe de 4 paquetes de galletas,
+		//sabiendo que cada paquete vale 2,5 euros
+		//Assert.Equals(4,l.calculate..clone().)
 	}
 
 	/**
