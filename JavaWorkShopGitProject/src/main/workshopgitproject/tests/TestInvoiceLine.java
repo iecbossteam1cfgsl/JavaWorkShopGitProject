@@ -7,6 +7,11 @@ import main.workshopgitproject.classes.Invoice;
 import main.workshopgitproject.classes.InvoiceLine;
 import main.workshopgitproject.classes.Product;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Assert.*;
+import org.junit.Test;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -33,7 +38,7 @@ public class TestInvoiceLine {
 	/**
 	 * Description of the method testInvoiceLineAmount.
 	 */
-	
+	@Test
 	public void testInvoiceLineAmount() {
 		// Start of user code for method testInvoiceLineAmount
 		// End of user code
@@ -50,14 +55,14 @@ public class TestInvoiceLine {
 		ivn.setNumber(1);
 		ivn.setProducts(p);
 		ivn.setQuantity(4);
-		
 		double correctPrice=10;
-		assertEquals(correctPrice,ivn.getInvoiceLineAmount());
+		assertEquals(correctPrice,ivn.getInvoiceLineAmount(),0.02);
 	}
 
 	/**
 	 * Description of the method testInvoiceAmount.
 	 */
+	@Test
 	public void testInvoiceAmount() {
 		// Start of user code for method testInvoiceAmount
 		// End of user code
@@ -87,7 +92,7 @@ public class TestInvoiceLine {
 		Invoice invo= new Invoice();
 		
 		double correctInvoiceAmount=40;
-		assertEquals(correctInvoiceAmount,invo.getTotalAmount());
+		assertEquals(correctInvoiceAmount,invo.getTotalAmount(),0.02);
 		
 		
 	}
@@ -95,6 +100,7 @@ public class TestInvoiceLine {
 	/**
 	 * Description of the method testAvaliableStock.
 	 */
+	@Test
 	public void testAvaliableStock() {
 		// Start of user code for method testAvaliableStock
 		// End of user code
